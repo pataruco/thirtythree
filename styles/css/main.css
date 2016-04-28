@@ -16,6 +16,9 @@ a {
 ul {
   list-style: none; }
 
+h1, h2, h3 {
+  font-family: 'PT Sans', sans-serif; }
+
 header {
   font-family: 'PT Sans', sans-serif;
   background-color: #d52431; }
@@ -39,11 +42,33 @@ header {
       display: inline; }
     .site-brand__navigation a {
       color: white;
-      font-size: 13px;
+      font-size: .8em;
       padding: 0 13px; }
 
 .hero-image {
   height: 350px;
   background: url(../../assets/header.jpg) no-repeat top center #fff; }
+
+main {
+  background-color: #f3f4f5; }
+
+.features {
+  background-color: #fff;
+  position: relative;
+  top: -50px; }
+
+.feature__title {
+  text-align: center;
+  padding: 20px 0; }
+  .feature__title h1 {
+    margin: 0;
+    font-size: 3em;
+    font-weight: normal;
+    color: #353a3d; }
+.feature__image {
+  padding: 0 30px; }
+  .feature__image img {
+    width: 100%;
+    height: auto; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,6 +1,10 @@
 @import "colours";
 @import "reset";
 
+// ************************************************
+// Header
+// ************************************************
+
 header {
   font-family: 'PT Sans', sans-serif;
   background-color: $brand-red;
@@ -20,7 +24,7 @@ header {
   }
 
   &__image {
-    padding: 20px 0;
+    @include normal-padding;
   }
 
   &__navigation {
@@ -34,7 +38,7 @@ header {
 
     a {
       color: $text-white;
-      font-size: 13px;
+      font-size: .8em;
       padding: 0 13px;
     }
   }
@@ -43,4 +47,38 @@ header {
 .hero-image {
   height: 350px;
   background: url(../../assets/header.jpg) no-repeat top center #fff;
+}
+
+// ************************************************
+// Main
+// ************************************************
+
+main {
+  background-color: $background-main;
+}
+
+.features {
+  background-color: #fff;
+  position: relative;
+  top:-50px;
+}
+
+.feature {
+  &__title {
+    text-align: center;
+    @include normal-padding;
+    h1 {
+      margin: 0;
+      font-size: 3em;
+      font-weight: normal;
+      color: $text_dark_grey;
+    }
+  }
+  &__image {
+    padding: 0 30px;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
 }
