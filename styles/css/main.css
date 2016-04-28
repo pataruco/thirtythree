@@ -70,6 +70,8 @@ main {
   .feature__image img {
     width: 100%;
     height: auto; }
+  .feature__image--padding-top {
+    padding: 30px; }
 
 .article {
   height: 312px; }
@@ -117,5 +119,20 @@ main {
   .feature-3 span {
     background-color: #d52431;
     color: #fff; }
+
+.slider {
+  height: 340px;
+  background-color: #d52431;
+  color: #fff; }
+
+.feature-5 {
+  background-color: #404145;
+  color: white; }
+  .feature-5 a {
+    background-color: #404145;
+    color: white; }
+  .feature-5 span {
+    background-color: white;
+    color: #404145; }
 
 /*# sourceMappingURL=main.css.map */
