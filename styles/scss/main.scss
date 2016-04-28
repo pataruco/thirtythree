@@ -3,4 +3,44 @@
 
 header {
   font-family: 'PT Sans', sans-serif;
+  background-color: $brand-red;
+}
+
+.constrain {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.site-brand {
+  height: 100px;
+
+  &__image, &__navigation {
+    display: inline-block;
+    width: 49.50%;
+  }
+
+  &__image {
+    padding: 20px 0;
+  }
+
+  &__navigation {
+    text-align: right;
+    vertical-align: top;
+    padding: 22px 0;
+
+    li {
+      display: inline;
+    }
+
+    a {
+      color: $text-white;
+      font-size: 13px;
+      padding: 0 13px;
+    }
+  }
+}
+
+.hero-image {
+  height: 350px;
+  background: url(../../assets/header.jpg) no-repeat top center #fff;
 }
