@@ -79,6 +79,9 @@ main {
     img {
       @include image-property;
     }
+    &--padding-top {
+      padding: 30px;
+    }
   }
 }
 
@@ -135,5 +138,21 @@ main {
   }
   span {
     @include change-colors($brand-red, #fff);
+  }
+}
+
+.slider {
+  height: 340px;
+  background-color: $brand-red;
+  color: #fff;
+}
+
+.feature-5 {
+  @include change-colors($background-dark-grey, $text-white);
+  a  {
+  @include change-colors($background-dark-grey, $text-white);
+  }
+  span {
+    @include change-colors($text-white, $background-dark-grey);
   }
 }
