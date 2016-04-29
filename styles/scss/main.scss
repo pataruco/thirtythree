@@ -38,7 +38,7 @@ header {
 
 .hero-image {
   height: 350px;
-  background: url(../../assets/header.jpg) no-repeat top center #fff;
+  background: url(../../assets/header.jpg) no-repeat top center $text-white;
 }
 
 // ************************************************
@@ -50,7 +50,7 @@ main {
 }
 
 .features {
-  background-color: #fff;
+  background-color: $text-white;
   position: relative;
   top:-50px;
 }
@@ -124,19 +124,19 @@ main {
   h2 {
     color: $brand-red;
   }
-  @include change-colors(#fff, $text-dark-grey);
+  @include change-colors($text-white, $text-dark-grey);
   a  {
-    @include change-colors(#fff, $brand-red);
+    @include change-colors($text-white, $brand-red);
   }
   span {
-    @include change-colors($brand-red, #fff);
+    @include change-colors($brand-red, $text-white);
   }
 }
 
 .slider {
   height: 340px;
   background-color: $brand-red;
-  color: #fff;
+  color: $text-white;
 }
 
 .feature-5 {
@@ -166,9 +166,73 @@ main {
       margin-right: 0;
     }
     a {
-      color: #fff;
+      color: $text-white;
       font-size: 2em;
       font-family: 'PT Sans', sans-serif;
+    }
+  }
+}
+
+
+// ************************************************
+// Footer
+// ************************************************
+footer {
+  background-color: $background_dark_grey;
+  color: $text-white;
+  font-size: .8em;
+}
+
+.footer-columns {
+  display: flex;
+  flex-direction: row;
+  height: 310px;
+}
+
+.footer-column {
+  width: 33%;
+  margin-top: 25px;
+  height: 260px;
+  li, a {
+    color: $text-white;
+  }
+  li {
+    padding-bottom: 16px;
+  }
+  ul {
+    padding-left: 0;
+  }
+
+  &__1 {
+    position: relative;
+    &__image {
+      vertical-align: bottom;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      line-height: 0;
+    }
+  }
+
+  &__3 {
+    position: relative;
+    &__social-media {
+      margin-top: 75px;
+      ul {
+        padding-left: 0;
+      }
+      li {
+        display: inline;
+        padding-right: 10px;
+      }
+    }
+    &__copyright {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      p {
+        margin: 0;
+      }
     }
   }
 }

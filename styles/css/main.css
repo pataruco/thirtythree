@@ -43,13 +43,13 @@ header {
 
 .hero-image {
   height: 350px;
-  background: url(../../assets/header.jpg) no-repeat top center #fff; }
+  background: url(../../assets/header.jpg) no-repeat top center white; }
 
 main {
   background-color: #f3f4f5; }
 
 .features {
-  background-color: #fff;
+  background-color: white;
   position: relative;
   top: -50px; }
 
@@ -105,21 +105,21 @@ main {
     color: #bfc7c9; }
 
 .feature-3 {
-  background-color: #fff;
+  background-color: white;
   color: #353a3d; }
   .feature-3 h2 {
     color: #d52431; }
   .feature-3 a {
-    background-color: #fff;
+    background-color: white;
     color: #d52431; }
   .feature-3 span {
     background-color: #d52431;
-    color: #fff; }
+    color: white; }
 
 .slider {
   height: 340px;
   background-color: #d52431;
-  color: #fff; }
+  color: white; }
 
 .feature-5 {
   background-color: #404145;
@@ -147,8 +147,52 @@ main {
     .feature-6__image:last-child {
       margin-right: 0; }
     .feature-6__image a {
-      color: #fff;
+      color: white;
       font-size: 2em;
       font-family: 'PT Sans', sans-serif; }
+
+footer {
+  background-color: #404145;
+  color: white;
+  font-size: .8em; }
+
+.footer-columns {
+  display: flex;
+  flex-direction: row;
+  height: 310px; }
+
+.footer-column {
+  width: 33%;
+  margin-top: 25px;
+  height: 260px; }
+  .footer-column li, .footer-column a {
+    color: white; }
+  .footer-column li {
+    padding-bottom: 16px; }
+  .footer-column ul {
+    padding-left: 0; }
+  .footer-column__1 {
+    position: relative; }
+    .footer-column__1__image {
+      vertical-align: bottom;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      line-height: 0; }
+  .footer-column__3 {
+    position: relative; }
+    .footer-column__3__social-media {
+      margin-top: 75px; }
+      .footer-column__3__social-media ul {
+        padding-left: 0; }
+      .footer-column__3__social-media li {
+        display: inline;
+        padding-right: 10px; }
+    .footer-column__3__copyright {
+      position: absolute;
+      bottom: 0;
+      left: 0; }
+      .footer-column__3__copyright p {
+        margin: 0; }
 
 /*# sourceMappingURL=main.css.map */
