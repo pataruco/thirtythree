@@ -131,4 +131,24 @@ main {
     background-color: white;
     color: #404145; }
 
+.feature-6 {
+  display: flex;
+  flex-direction: row;
+  padding: 30px; }
+  .feature-6__image {
+    width: 280px;
+    height: 280px;
+    background: url(../../assets/FooterImg.jpg);
+    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+    .feature-6__image:last-child {
+      margin-right: 0; }
+    .feature-6__image a {
+      color: #fff;
+      font-size: 2em;
+      font-family: 'PT Sans', sans-serif; }
+
 /*# sourceMappingURL=main.css.map */

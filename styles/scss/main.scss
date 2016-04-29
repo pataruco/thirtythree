@@ -148,3 +148,27 @@ main {
     @include change-colors($text-white, $background-dark-grey);
   }
 }
+
+.feature-6 {
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+  &__image {
+    width: 280px;
+    height: 280px;
+    background: url(../../assets/FooterImg.jpg);
+    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    &:last-child{
+      margin-right: 0;
+    }
+    a {
+      color: #fff;
+      font-size: 2em;
+      font-family: 'PT Sans', sans-serif;
+    }
+  }
+}
