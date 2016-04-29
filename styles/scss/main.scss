@@ -1,6 +1,10 @@
 @import "colours";
 @import "reset";
 
+// ************************************************
+// Header
+// ************************************************
+
 header {
   font-family: 'PT Sans', sans-serif;
   background-color: $brand-red;
@@ -12,29 +16,21 @@ header {
 }
 
 .site-brand {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   height: 100px;
 
   &__image, &__navigation {
-    display: inline-block;
-    width: 49.50%;
+    width: 50%;
   }
-
-  &__image {
-    padding: 20px 0;
-  }
-
   &__navigation {
-    text-align: right;
-    vertical-align: top;
-    padding: 22px 0;
-
     li {
       display: inline;
     }
-
     a {
       color: $text-white;
-      font-size: 13px;
+      font-size: .8em;
       padding: 0 13px;
     }
   }
@@ -43,4 +39,136 @@ header {
 .hero-image {
   height: 350px;
   background: url(../../assets/header.jpg) no-repeat top center #fff;
+}
+
+// ************************************************
+// Main
+// ************************************************
+
+main {
+  background-color: $background-main;
+}
+
+.features {
+  background-color: #fff;
+  position: relative;
+  top:-50px;
+}
+
+.feature {
+  &__title {
+    text-align: center;
+    @include normal-padding;
+    h1 {
+      margin: 0;
+      font-size: 3em;
+      font-weight: normal;
+      color: $text_dark_grey;
+    }
+  }
+  &__image {
+    padding: 0 30px 30px;
+    img {
+      @include image-property;
+    }
+    &--padding-top {
+      padding: 30px;
+    }
+  }
+}
+
+.article {
+  height: 312px;
+
+  &__content {
+    display: inline-block;
+    width: 640px;
+    vertical-align: top;
+    padding: 50px;
+    h2 {
+      margin-top: 0;
+      font-weight: normal;
+    }
+  }
+
+  &__image {
+    display: inline-block;
+    width: 315px;
+    img {
+      @include image-property;
+    }
+  }
+}
+
+.apply-link {
+  font-weight: bold;
+  span {
+    padding: .2em;
+    border-radius: 1.2em;
+    color: $background_light_grey;
+    background-color: $text-dark-grey;
+  }
+}
+
+.feature-2 {
+  @include change-colors($background-light-grey, $text-dark-grey);
+  a  {
+    @include change-colors($background-light-grey, $text-dark-grey);
+  }
+  span {
+    @include change-colors($text-dark-grey, $background-light-grey);
+  }
+}
+
+.feature-3 {
+  h2 {
+    color: $brand-red;
+  }
+  @include change-colors(#fff, $text-dark-grey);
+  a  {
+    @include change-colors(#fff, $brand-red);
+  }
+  span {
+    @include change-colors($brand-red, #fff);
+  }
+}
+
+.slider {
+  height: 340px;
+  background-color: $brand-red;
+  color: #fff;
+}
+
+.feature-5 {
+  @include change-colors($background-dark-grey, $text-white);
+  a  {
+  @include change-colors($background-dark-grey, $text-white);
+  }
+  span {
+    @include change-colors($text-white, $background-dark-grey);
+  }
+}
+
+.feature-6 {
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+  &__image {
+    width: 280px;
+    height: 280px;
+    background: url(../../assets/FooterImg.jpg);
+    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    &:last-child{
+      margin-right: 0;
+    }
+    a {
+      color: #fff;
+      font-size: 2em;
+      font-family: 'PT Sans', sans-serif;
+    }
+  }
 }

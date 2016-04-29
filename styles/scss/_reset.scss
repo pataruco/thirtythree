@@ -19,3 +19,21 @@ a {
 ul {
   list-style: none;
 }
+
+h1, h2, h3 {
+  font-family: 'PT Sans', sans-serif;
+}
+
+@mixin normal-padding {
+  padding: 20px 0;
+}
+
+@mixin image-property {
+  width: 100%;
+  height: auto;
+}
+
+@mixin change-colors($background-color, $color) {
+  background-color: $background-color;
+  color: $color;
+}
