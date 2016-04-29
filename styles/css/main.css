@@ -28,22 +28,18 @@ header {
   margin: 0 auto; }
 
 .site-brand {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   height: 100px; }
   .site-brand__image, .site-brand__navigation {
-    display: inline-block;
-    width: 49.50%; }
-  .site-brand__image {
-    padding: 20px 0; }
-  .site-brand__navigation {
-    text-align: right;
-    vertical-align: top;
-    padding: 22px 0; }
-    .site-brand__navigation li {
-      display: inline; }
-    .site-brand__navigation a {
-      color: white;
-      font-size: .8em;
-      padding: 0 13px; }
+    width: 50%; }
+  .site-brand__navigation li {
+    display: inline; }
+  .site-brand__navigation a {
+    color: white;
+    font-size: .8em;
+    padding: 0 13px; }
 
 .hero-image {
   height: 350px;
