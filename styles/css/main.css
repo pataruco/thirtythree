@@ -162,11 +162,27 @@ main {
     font-size: 4em;
     font-family: sans-serif;
     font-weight: 100; }
+    .slider__arrow a {
+      color: white; }
+  .slider__container {
+    width: 806px;
+    height: 100%;
     font-size: 3em;
-    .slider__quotes p {
+    padding: 80px 20px;
+    overflow: hidden; }
+    .slider__container p {
       margin: 0; }
-    .slider__quotes span {
+    .slider__container span {
       font-size: 1rem; }
+  .slider__wrapper {
+    width: 2418px;
+    transform: translate3d(0, 0, 0);
+    transition: transform .5s ease-in-out; }
+  .slider__content {
+    width: 806px;
+    height: 100%;
+    white-space: normal;
+    float: left; }
 
 footer {
   background-color: #404145;
