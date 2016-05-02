@@ -26,7 +26,7 @@ Once it is installed in your machine and in the `thirtythree` directory, run
 
 ## Fun Parts
 
-* Create slider JavaScript
+* Create slider script
 
 ## Libraries used
 
