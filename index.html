@@ -67,15 +67,27 @@
         </section>
 
         <section class="slider">
-          <div class="slider__arrow">
-             <span> < </span>
+          <div class="slider__arrow js-arrow" data-navigation=-1>
+            <a href="#"><</a>
           </div>
-          <div class="slider__quotes">
-            <p>"ThirtyThree is an amazing place to work and everyone welcomes you like one of the family"</p>
-            <span>Jane Doe 2015</span>
+          <div class="slider__container">
+            <div class="slider__wrapper" id="wrapper">
+              <div class="slider__content js-content" data-pos="0px">
+                <p>"ThirtyThree is an amazing place to work and everyone welcomes you like one of the family"</p>
+                <span>Jane Doe 2015</span>
+              </div>
+              <div class="slider__content js-content" data-pos="-806px">
+                <p>"ThirtyThree is wonderfulg place to work and everyone welcomes you like one of the gang"</p>
+                <span>John Doe 2015</span>
+              </div>
+              <div class="slider__content js-content" data-pos="-1612px">
+                <p>"ThirtyThree is a great place to work and everyone welcomes you like one of the band"</p>
+                <span>John Smith 2015</span>
+              </div>
+            </div>
           </div>
-          <div class="slider__arrow">
-            <span> > </span>
+          <div class="slider__arrow js-arrow" data-navigation=1>
+            <a href="#">></a>
           </div>
         </section>
 
@@ -153,5 +165,7 @@
         </div>
       </div>
     </footer>
+    <script src="./scripts/jquery.js" charset="utf-8"></script>
+    <script src="./scripts/main.js" charset="utf-8"></script>
   </body>
 </html>

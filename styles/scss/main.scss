@@ -180,17 +180,22 @@ main {
   align-items: center;
 
   &__arrow {
-    width: 8%;
+    width: 77px;
     text-align: center;
     font-size: 4em;
     font-family: sans-serif;
     font-weight: 100;
+    a {
+      color: $text-white;
+    }
   }
 
-  &__quotes {
-    width: 96%;
+  &__container {
+    width: 806px;
+    height: 100%;
     font-size: 3em;
-    padding: 80px 50px;
+    padding: 80px 20px;
+    overflow: hidden;
     p {
       margin: 0;
     }
@@ -198,8 +203,20 @@ main {
       font-size: 1rem;
     }
   }
-}
 
+  &__wrapper {
+    width: 2418px;
+    transform: translate3d(0, 0, 0);
+    transition: transform .5s ease-in-out;
+  }
+
+  &__content {
+    width: 806px;
+    height: 100%;
+    white-space: normal;
+    float: left;
+  }
+}
 
 // ************************************************
 // Footer
