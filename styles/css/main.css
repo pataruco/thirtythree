@@ -151,6 +151,26 @@ main {
       font-size: 2em;
       font-family: 'PT Sans', sans-serif; }
 
+.slider {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  .slider__arrow {
+    width: 8%;
+    text-align: center;
+    font-size: 4em;
+    font-family: sans-serif;
+    font-weight: 100; }
+  .slider__quotes {
+    width: 96%;
+    font-size: 3em;
+    padding: 80px 50px; }
+    .slider__quotes p {
+      margin: 0; }
+    .slider__quotes span {
+      font-size: 1rem; }
+
 footer {
   background-color: #404145;
   color: white;
